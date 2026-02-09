@@ -45,7 +45,7 @@ const Team = () => {
       name: 'Ratan Rathore',
       role: 'Digital Content Creator',
       image:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+        'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80',
       description:
         'Creative mind behind our engaging educational content and social media.',
     },
