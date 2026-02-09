@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @import "tailwindcss";
 
 /* Custom utility classes without @layer and @apply */
@@ -7,8 +6,15 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 400px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -29,13 +35,31 @@
   background-color: #3C8091;
   color: white;
   font-weight: 600;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   border-radius: 0.5rem;
   transition: all 0.3s;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 400px) {
+  .btn-primary {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .btn-primary {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .btn-primary:hover {
@@ -48,12 +72,30 @@
   border: 2px solid #3C8091;
   color: #3C8091;
   font-weight: 600;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   border-radius: 0.5rem;
   transition: all 0.3s;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 400px) {
+  .btn-outline {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .btn-outline {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .btn-outline:hover {
@@ -62,10 +104,24 @@
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 400px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -75,9 +131,24 @@
 }
 
 .section-subtitle {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   color: #4b5563;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 400px) {
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -95,4 +166,10 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Prevent horizontal scroll on small screens */
+* {
+  box-sizing: border-box;
 }

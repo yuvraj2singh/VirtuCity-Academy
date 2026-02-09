@@ -35,8 +35,8 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white shadow-lg py-4'
-          : 'bg-white/95 backdrop-blur-sm py-4 shadow-md'
+          ? 'bg-white shadow-lg py-3 sm:py-4'
+          : 'bg-white/95 backdrop-blur-sm py-3 sm:py-4 shadow-md'
       }`}
     >
       <div className="container-custom">
@@ -45,18 +45,18 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-2 sm:gap-3"
           >
             <img
               src="/logo.png"
               alt="VirtuCity Academy"
-              className="h-12 w-12 object-contain"
+              className="h-10 w-10 sm:h-12 sm:w-12 object-contain flex-shrink-0"
             />
-            <div>
-              <h1 className="text-xl md:text-2xl font-bold text-gray-800">
+            <div className="min-w-0">
+              <h1 className="text-base sm:text-xl md:text-2xl font-bold text-gray-800 truncate">
                 VirtuCity Academy
               </h1>
-              <p className="text-xs text-primary font-medium hidden md:block">
+              <p className="text-[10px] sm:text-xs text-primary font-medium hidden sm:block">
                 Learn. Excel. Thrive.
               </p>
             </div>
@@ -93,9 +93,10 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-gray-700 hover:text-primary transition-colors"
+            className="lg:hidden text-gray-700 hover:text-primary transition-colors p-1 flex-shrink-0"
+            aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={24} className="sm:w-7 sm:h-7" /> : <Menu size={24} className="sm:w-7 sm:h-7" />}
           </button>
         </div>
 
@@ -108,13 +109,13 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden overflow-hidden"
             >
-              <div className="py-4 space-y-4">
+              <div className="py-3 sm:py-4 space-y-2 sm:space-y-4">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
                     onClick={(e) => scrollToSection(e, item.href)}
-                    className="block text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                    className="block text-gray-700 hover:text-primary font-medium transition-colors py-2 text-sm sm:text-base"
                   >
                     {item.name}
                   </a>
@@ -123,7 +124,7 @@ const Navbar = () => {
                 <a
                   href="#contact"
                   onClick={(e) => scrollToSection(e, '#contact')}
-                  className="block btn-primary text-center"
+                  className="block btn-primary text-center mt-2"
                 >
                   Get Started
                 </a>
