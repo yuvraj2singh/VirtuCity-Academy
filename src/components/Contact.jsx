@@ -152,7 +152,7 @@ const Contact = () => {
                   />
                 </div>
               ))}
-
+              
               <div>
                 <label className="block text-xs sm:text-sm font-semibold text-gray-700 mb-2">
                   Message
