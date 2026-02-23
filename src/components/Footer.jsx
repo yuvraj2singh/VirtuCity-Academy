@@ -106,8 +106,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-2 sm:space-x-3 text-gray-400">
                 <Mail size={16} className="sm:w-5 sm:h-5 shrink-0 mt-0.5" />
-                <a href="mailto:info@virtucityacademy.com" className="text-xs sm:text-sm hover:text-primary transition-colors break-all">
-                  info@virtucityacademy.com
+                <a href="mailto:info.virtucity@gmail.com" className="text-xs sm:text-sm hover:text-primary transition-colors break-all">
+                info.virtucity@gmail.com
                 </a>
               </li>
             </ul>

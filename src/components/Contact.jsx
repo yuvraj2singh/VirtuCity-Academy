@@ -36,8 +36,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: 'Email',
-      content: 'info@virtucityacademy.com',
-      link: 'mailto:info@virtucityacademy.com',
+      content: 'info.virtucity@gmail.com',
+      link: 'mailto:info.virtucity@gmail.com',
     },
     {
       icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -91,6 +91,7 @@ const Contact = () => {
                   key={index}
                   href={info.link}
                   initial={{ opacity: 0, y: 20 }}
+                  target = {info.title=='Location' ? '_blank' : ''}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
                   className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"

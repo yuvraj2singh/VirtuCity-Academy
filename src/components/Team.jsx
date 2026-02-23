@@ -53,7 +53,7 @@ const Team = () => {
       name: 'Yuvraj Singh',
       role: 'Technical Developer',
       image:
-        'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
+        'yuvrajSingh.jpeg',
       description:
         'Expert in building modern web solutions and digital infrastructure.',
     },
