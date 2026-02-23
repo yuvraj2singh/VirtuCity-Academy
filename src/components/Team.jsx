@@ -13,7 +13,7 @@ const Team = () => {
       name: 'Rashmi Jain',
       role: 'Owner & Manager',
       image:
-        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+        'public/rashmiJain.png',
       description:
         'Visionary leader driving excellence in medical education and training.',
     },
@@ -29,7 +29,7 @@ const Team = () => {
       name: 'Dr. Saurabh Jain',
       role: 'Course Consultant',
       image:
-        'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80',
+        'public/saurabhJain.jpeg',
       description:
         'Specialized consultant for advanced medical training programs.',
     },
@@ -37,7 +37,7 @@ const Team = () => {
       name: 'Dr. Antima Rathore',
       role: 'Course Consultant',
       image:
-        'https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80',
+        'public/antimaRathore.jpeg',
       description:
         'Medical expert ensuring curriculum meets highest standards.',
     },
@@ -45,7 +45,7 @@ const Team = () => {
       name: 'Ratan Rathore',
       role: 'Digital Content Creator',
       image:
-        'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80',
+        'public/Ratan.jpeg',
       description:
         'Creative mind behind our engaging educational content and social media.',
     },
