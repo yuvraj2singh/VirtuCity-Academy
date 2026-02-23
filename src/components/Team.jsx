@@ -13,7 +13,7 @@ const Team = () => {
       name: 'Rashmi Jain',
       role: 'Owner & Manager',
       image:
-        'public/rashmiJain.png',
+        'rashmiJain.png',
       description:
         'Visionary leader driving excellence in medical education and training.',
     },
@@ -29,7 +29,7 @@ const Team = () => {
       name: 'Dr. Saurabh Jain',
       role: 'Course Consultant',
       image:
-        'public/saurabhJain.jpeg',
+        'saurabhJain.jpeg',
       description:
         'Specialized consultant for advanced medical training programs.',
     },
@@ -37,7 +37,7 @@ const Team = () => {
       name: 'Dr. Antima Rathore',
       role: 'Course Consultant',
       image:
-        'public/antimaRathore.jpeg',
+        'antimaRathore.jpeg',
       description:
         'Medical expert ensuring curriculum meets highest standards.',
     },
@@ -45,7 +45,7 @@ const Team = () => {
       name: 'Ratan Rathore',
       role: 'Digital Content Creator',
       image:
-        'public/Ratan.jpeg',
+        'Ratan.jpeg',
       description:
         'Creative mind behind our engaging educational content and social media.',
     },
