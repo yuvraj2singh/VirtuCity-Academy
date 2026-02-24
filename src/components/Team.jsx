@@ -21,7 +21,7 @@ const Team = () => {
       name: 'Nazma',
       role: 'BLS/CPR Instructor & Course Coordinator',
       image:
-        'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80',
+        'Nazma.jpeg',
       description:
         'Certified instructor with extensive hands-on training experience.',
     },
