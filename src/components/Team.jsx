@@ -45,7 +45,7 @@ const Team = () => {
       name: 'Ratan Rathore',
       role: 'Digital Content Creator',
       image:
-        'Ratan.jpeg',
+        'Ratan2.jpeg',
       description:
         'Creative mind behind our engaging educational content and social media.',
     },
